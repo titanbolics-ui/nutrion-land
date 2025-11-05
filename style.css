@@ -1,0 +1,80 @@
+
+/* Загальні налаштування та темний фон */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #121212;
+    color: #EAEAEA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Контейнер для центрування контенту */
+.container {
+    max-width: 600px;
+    padding: 20px;
+}
+
+/* Стиль головного заголовка */
+h1 {
+    font-size: 2.5em; /* Розмір для десктопу */
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+/* Стиль підзаголовка */
+p {
+    font-size: 1.1em;
+    font-weight: 300;
+    color: #A0A0A0;
+    margin-bottom: 40px;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Стиль кнопки */
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: #00AEEF; /* Акцентний синій колір */
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0099CC; /* Колір при наведенні */
+}
+
+/* Стиль іконки WhatsApp */
+.whatsapp-icon {
+    margin-right: 12px;
+}
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em; /* Трохи менший шрифт на мобільних */
+    }
+    p {
+        font-size: 1em;
+    }
+    .cta-button {
+        width: 90%; /* Кнопка на всю ширину на мобільних */
+        padding: 18px 0;
+    }
+}
