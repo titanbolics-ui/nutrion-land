@@ -83,8 +83,12 @@
         var whatsappButton = document.getElementById("whatsappButton");
         if (whatsappButton) {
           whatsappButton.addEventListener("click", function () {
-            fbq("track", "Contact");
-            console.log("Contact event tracked"); // For debugging
+            if (typeof fbq !== "undefined") {
+              fbq("track", "Contact");
+              console.log("Contact event tracked successfully");
+            } else {
+              console.error("Facebook Pixel not loaded (fbq is undefined)");
+            }
           });
         }
       });
